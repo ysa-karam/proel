@@ -1,204 +1,188 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <style>
-        body{
-            background:#30ccf3b7;
-            direction: rtl;
-        }
-        .photo1{
-            width:100%;
-            height:400px;
-            position:relative;
-            border: solid 2px white;
-            border-radius: 10%;
-
-        }
-        .photo2{
-            position:absolute;
-            margin-left: 101px;
-            margin-top: -100px;
-            border: solid 3px white;
-            border-radius: 40%;
-            margin-right: 550px;
-            align-items: center !important;
-        }
-        .photo2:hover{
-            border-radius: 40%;
-            border: solid 3px rebeccapurple;
-        }
-        .poi{
-            color:blue;
-            display: inline-block;
-            background-color: aqua;
-            border: solid 3px black;
-            text-decoration: none;
-            text-align: center;
-            width:15%;
-            height: 30px;
-            font-size: 23px;
-            margin: 10px;
-            padding:15px;
-            margin-top: 150px;
-        }
-        .poi:hover{
-            color:aliceblue;
-            background-color: blue;
-            border-radius: 20%;
-        }.ooo{
-            background-color: blue;
-            color: azure;
-            display: block;
-            text-align: center;
-            font-size: 20px;
-            border: solid 2px rgb(98, 98, 179);
-
-        }.cont{
-            display: flex;
-            justify-content: center; /* عشان العناصر في النص */
-            flex-wrap: wrap; /* لو الشاشة صغيرة ينزلوا تحت */
-            background-color: lightgray;
-            padding: 20px;
-        }
-        .uuu{
-            display: flex;
-            flex-direction: column;
-            color: aqua;
-            background-color: blue;
-            border: solid 3px black;
-            border-radius: 10%;
-            width: calc(90% / 3);
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            
-
-
-        }.qww{
-            color:red;
-            font-size: 30px;
-            direction: rtl;
-        }.ewe{
-            width: 30%;
-            height: 200px;
-            color:#ffffff;
-            border: solid 3px black;
-        }.jkl{
-            height:100px;
-            width:30%;
-        }.sws{
-            width:60%;
-            height: 70px;
-            margin-left: 20px;
-        }.ced{
-            color:red;
-            border: solid 2px black;
-            text-decoration: none;
-            background-color: rgb(172, 115, 115);
-            padding: 10px;
-            display: inline-block;
-            margin: 30px;
-            width: 40px;
-        }main{
-            color: #ffffff;
-            background-color: blueviolet;
-            display: flex;
-            flex-wrap: nowrap;
-            width: 100%;
-            height: 300px;
-        
-            
-        }.jkl{
-            margin:20px;
-            padding: 10px;
-            border: 3px solid black;
-            height:200px;
-            width:20%;
-            margin-left: 20px;
-            font-size: 20px;
-            text-align: center;
-            margin: 80px;
-            background-color: brown;
-            margin-top: 4px;
-        }h6{
-            background-color: grey;
-            color:#ffffff;
-            text-align: center;
-            font-size: 20px;
-            height: 50px;
-        }.git{
-            margin:20px;
-            padding: 10px;
-            border: 3px solid black;
-            height:200px;
-            width:20%;
-            margin-left: 20px;
-            font-size: 20px;
-            text-align: center;
-            margin: 70px;
-            background-color: brown;
-            margin-top: 4px;
-        }.css{
-            margin:20px;
-            padding: 10px;
-            border: 3px solid black;
-            height:200px;
-            width:20%;
-            margin-left: 20px;
-            font-size: 20px;
-            text-align: center;
-            margin: 60px;
-            background-color: brown;
-            margin-bottom: 20px;
-            margin-top: 4px;
-        }
-
-    </style>
-    
-    <img class="photo1" src="css4.png" alt="jpg">
-    <img class="photo2" src="css2.png" alt="png">
-    <meta charset="UTF-8">
-    <title>مشروع تخرج css</title>
+  <meta charset="UTF-8">
+  <title>مشروع تخرج CSS</title>
+  <style>
+    body {
+      background: #30ccf3b7;
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      direction: rtl;
+    }
+    header img.photo1 {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border: solid 2px white;
+      border-radius: 10%;
+      display: block;
+    }
+    header img.photo2 {
+      position: absolute;
+      top: 280px;
+      right: 50%;
+      transform: translateX(50%);
+      border: solid 3px white;
+      border-radius: 40%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+    header img.photo2:hover {
+      border: solid 3px rebeccapurple;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 180px;
+      gap: 15px;
+    }
+    nav a.poi {
+      color: blue;
+      background-color: aqua;
+      border: solid 3px black;
+      text-decoration: none;
+      text-align: center;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    nav a.poi:hover {
+      color: #fff;
+      background-color: blue;
+      border-radius: 20%;
+    }
+    .ooo {
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin: 20px 0;
+    }
+    .cont {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: lightgray;
+      padding: 20px;
+      gap: 15px;
+    }
+    .uuu {
+      background-color: blue;
+      color: aqua;
+      border: solid 3px black;
+      border-radius: 10%;
+      padding: 10px;
+      flex: 1 1 calc(30% - 20px);
+      text-align: center;
+      font-size: 18px;
+    }
+    h1.qww {
+      color: red;
+      font-size: 30px;
+      margin: 30px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: blueviolet;
+    }
+    .card {
+      background-color: brown;
+      color: #fff;
+      border: 3px solid black;
+      border-radius: 8px;
+      width: 250px;
+      padding: 10px;
+      text-align: center;
+    }
+    .card img {
+      width: 80%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card a {
+      display: inline-block;
+      background-color: rgb(172, 115, 115);
+      color: red;
+      padding: 5px 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      border: solid 2px black;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    .card a:hover {
+      background-color: red;
+      color: #fff;
+    }
+    footer {
+      background-color: grey;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-    <a class="poi" href="">الرئيسيه</a>
+
+  <header>
+    <img class="photo1" src="css1.jpg" alt="صورة رئيسية">
+    <img class="photo2" src="css2.png" alt="شعار">
+  </header>
+
+  <nav>
+    <a class="poi" href="#">الرئيسية</a>
     <a class="poi" href="https://elzero.org/">دورات</a>
     <a class="poi" href="https://elzero.org/tracks/front-end/">مقالات</a>
     <a class="poi" href="https://elzero.org/tracks/front-end/">ملخصات</a>
     <a class="poi" href="https://www.techevoo.com/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%AA%D8%B9%D9%84%D9%85-frontend/">مصادر</a>
-    <div class="ooo">
-    <h1>اكاديميه الزيرو</h1>
-    <h4>اكاديميه الزيرو لتعليم البرمجه</h4>
+  </nav>
+
+  <div class="ooo">
+    <h1>أكاديمية الزيرو</h1>
+    <h4>أكاديمية الزيرو لتعليم البرمجة</h4>
+  </div>
+
+  <div class="cont">
+    <h2 class="uuu">دروس منوعة ✅</h2>
+    <h2 class="uuu">باللغة العربية ✅</h2>
+    <h2 class="uuu">بجودة عالية ✅</h2>
+  </div>
+
+  <h1 class="qww">دورات تطوير المواقع:</h1>
+
+  <main>
+    <div class="card">
+      <img src="ht.png" alt="HTML">
+      <h3>سلسلة دروس HTML</h3>
+      <a href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji">مشاهدة</a>
     </div>
-    <div class="cont">
-    
-    <h2 class="uuu">دروس منوعه✅</h2>
-    <h2 class="uuu">باللغه العربيه✅</h2>
-    <h2 class="uuu">بجوده عاليه✅</h2>
+    <div class="card">
+      <img src="git.png" alt="Git">
+      <h3>سلسلة دروس Git</h3>
+      <a href="https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF">مشاهدة</a>
     </div>
-    <h1 class="qww">دورات تطوير المواقع:</h1>
-    <main>
-    <div class="jkl">
-        <img class="sws" src="ht.png" alt="hgf">
-        <h5>سلسه دروس html</h5>
-        <a class="ced" href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji">مشاهده</a>
-      </div>
-        <div class="git">
-          <img class="sws" src="git.png" alt="uhh">
-          <h5>سلسه دروس Git</h5>
-          <a class="ced" href="https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF">مشاهده</a>
-          
-      </div>
-        <div class="css">
-          <img class="sws" src="css.png" alt="ffcgg">
-          <h5>سلسه دروس css</h5>
-          <a class="ced" href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe">مشاهده</a>
-          </div></main>
-     
-      <h6> جميع الحقوق محفوظه-الزيرو 2025</h6>
-      
-      
+    <div class="card">
+      <img src="css.png" alt="CSS">
+      <h3>سلسلة دروس CSS</h3>
+      <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe">مشاهدة</a>
+    </div>
+  </main>
+
+  <footer>
+    جميع الحقوق محفوظة - الزيرو 2025
+  </footer>
+
 </body>
 </html>
