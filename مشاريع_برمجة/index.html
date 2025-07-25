@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مشروع تخرج CSS</title>
+  <style>
+    body {
+      background: #30ccf3b7;
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      direction: rtl;
+    }
+    header img.photo1 {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border: solid 2px white;
+      border-radius: 10%;
+      display: block;
+    }
+    header img.photo2 {
+      position: absolute;
+      top: 280px;
+      right: 50%;
+      transform: translateX(50%);
+      border: solid 3px white;
+      border-radius: 40%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+    header img.photo2:hover {
+      border: solid 3px rebeccapurple;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 180px;
+      gap: 15px;
+    }
+    nav a.poi {
+      color: blue;
+      background-color: aqua;
+      border: solid 3px black;
+      text-decoration: none;
+      text-align: center;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    nav a.poi:hover {
+      color: #fff;
+      background-color: blue;
+      border-radius: 20%;
+    }
+    .ooo {
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin: 20px 0;
+    }
+    .cont {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: lightgray;
+      padding: 20px;
+      gap: 15px;
+    }
+    .uuu {
+      background-color: blue;
+      color: aqua;
+      border: solid 3px black;
+      border-radius: 10%;
+      padding: 10px;
+      flex: 1 1 calc(30% - 20px);
+      text-align: center;
+      font-size: 18px;
+    }
+    h1.qww {
+      color: red;
+      font-size: 30px;
+      margin: 30px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: blueviolet;
+    }
+    .card {
+      background-color: brown;
+      color: #fff;
+      border: 3px solid black;
+      border-radius: 8px;
+      width: 250px;
+      padding: 10px;
+      text-align: center;
+    }
+    .card img {
+      width: 80%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card a {
+      display: inline-block;
+      background-color: rgb(172, 115, 115);
+      color: red;
+      padding: 5px 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      border: solid 2px black;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    .card a:hover {
+      background-color: red;
+      color: #fff;
+    }
+    footer {
+      background-color: grey;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="photo1" src="css1.jpg" alt="صورة رئيسية">
+    <img class="photo2" src="css2.png" alt="شعار">
+  </header>
+
+  <nav>
+    <a class="poi" href="#">الرئيسية</a>
+    <a class="poi" href="https://elzero.org/">دورات</a>
+    <a class="poi" href="https://elzero.org/tracks/front-end/">مقالات</a>
+    <a class="poi" href="https://elzero.org/tracks/front-end/">ملخصات</a>
+    <a class="poi" href="https://www.techevoo.com/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%AA%D8%B9%D9%84%D9%85-frontend/">مصادر</a>
+  </nav>
+
+  <div class="ooo">
+    <h1>أكاديمية الزيرو</h1>
+    <h4>أكاديمية الزيرو لتعليم البرمجة</h4>
+  </div>
+
+  <div class="cont">
+    <h2 class="uuu">دروس منوعة ✅</h2>
+    <h2 class="uuu">باللغة العربية ✅</h2>
+    <h2 class="uuu">بجودة عالية ✅</h2>
+  </div>
+
+  <h1 class="qww">دورات تطوير المواقع:</h1>
+
+  <main>
+    <div class="card">
+      <img src="ht.png" alt="HTML">
+      <h3>سلسلة دروس HTML</h3>
+      <a href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji">مشاهدة</a>
+    </div>
+    <div class="card">
+      <img src="git.png" alt="Git">
+      <h3>سلسلة دروس Git</h3>
+      <a href="https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF">مشاهدة</a>
+    </div>
+    <div class="card">
+      <img src="css.png" alt="CSS">
+      <h3>سلسلة دروس CSS</h3>
+      <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe">مشاهدة</a>
+    </div>
+  </main>
+
+  <footer>
+    جميع الحقوق محفوظة - الزيرو 2025
+  </footer>
+
+</body>
+</html>
